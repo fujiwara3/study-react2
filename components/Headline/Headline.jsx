@@ -1,4 +1,4 @@
-import styles from '../styles/Home.module.css'
+import styles from '../components/Headline.module.css'
 import Head from 'next/head'
 
 export default function Headline(props) {
