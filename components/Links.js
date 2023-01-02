@@ -1,4 +1,5 @@
 
+
 import { Inter } from '@next/font/google'
 import styles from '../components/Links.module.css'
 
@@ -41,7 +42,7 @@ export default function Links() {
           </a>
             )
           })}
-          </div>
+        </div>
       
     </>
   )

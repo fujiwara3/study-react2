@@ -1,3 +1,10 @@
+.card:hover,
+.card:focus,
+.card:active{
+    color: #0070f3;
+    border-color: #0070f3
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(25%, auto));
