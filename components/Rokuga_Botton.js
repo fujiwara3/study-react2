@@ -9,7 +9,7 @@ export default function Rokuga_Botton() {
   const [count, setCount] = useState(1);
 
   const handleClick = useCallback((e) => {
-    if(count < 10){
+    if(count < 100){
       setCount(count + 1);
     }
   }, [count]);

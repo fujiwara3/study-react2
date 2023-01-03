@@ -1,9 +1,10 @@
+
 .title{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 100px;
+  padding: 10px 7px;
   font-size: 3rem;
 }
 

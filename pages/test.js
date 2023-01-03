@@ -12,7 +12,7 @@ export default function Home() {
       </a>
 
 
-      <a className={styles.title}>問題選択</a>
+      <a className={styles.title4}>問題選択</a>
 
       <main className={styles.main}>
 

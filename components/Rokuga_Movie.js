@@ -19,7 +19,7 @@ export default function Rokuga_Movie() {
                 alt="Vercel Logo"
                 className={styles.vercelLogo}
                 width={680}
-                height={465}
+                height={433}
                 priority
               />
             </a>
