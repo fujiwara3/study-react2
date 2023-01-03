@@ -1,33 +1,39 @@
 import styles from '../components/Rokuga_Botton.module.css'
 import Image from 'next/image'
+import{useState, useCallback} from "react"
+
+
 
 export default function Rokuga_Botton() {
+  
+  const [count, setCount] = useState(1);
 
-function test(){
-    console.log('click!!');
-}
+  const handleClick = useCallback((e) => {
+    if(count < 10){
+      setCount(count + 1);
+    }
+  }, [count]);
+
+
 
   return (
     <>
 
-
       <div className={styles.card}>
-          <div>
-             <button onClick= {test()} 
-             target="_blank"
-             rel="noopener noreferrer">
-              
-              <Image
+        <botton  onClick= {handleClick} className={styles.anchor}>
+        <Image
                 src="/Snapshot2.png"
                 alt="Vercel Logo"
-                
                 width={100}
                 height={60}
                 priority
               />
-             </button>
-          </div>
-     </div>
+        </botton>
+      </div>
+
+      <botton>
+        {count % 2 ? "録画開始" : "録画停止"}
+      </botton>
 
 
     
