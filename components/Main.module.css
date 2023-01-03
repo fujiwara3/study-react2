@@ -6,6 +6,33 @@
   padding: 6rem;
   min-height: 100vh;
 }
+.main1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.main2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  float: left;
+  font-size: 1.7rem;
+  
+}
+
+.main3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: right;
+  font-size: 1.7rem;
+
+}
+
+
 
 .title{
   display: flex;
@@ -20,9 +47,22 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 8px 24px;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
+
+.title2{
+  font-size: 1.5rem;
+}
+.title3{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 120px 70px;
+  font-size: 4rem;
+}
+
+
 
 .anchor{
   display: inline-block;

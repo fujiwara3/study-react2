@@ -1,3 +1,12 @@
+.title{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 7px;
+  font-size: 3rem;
+}
+
 .card:hover,
 .card:focus,
 .card:active{
@@ -51,7 +60,7 @@
 }
 
 /* Mobile */
-@media (max-width: 700px) {
+@media (max-width: 7700px) {
 
   .grid {
     grid-template-columns: 1fr;
@@ -70,7 +79,7 @@
 }
 
 /* Tablet and Smaller Desktop */
-@media (min-width: 701px) and (max-width: 1120px) {
+@media (min-width: 2101px) and (max-width: 1120px) {
   .grid {
     grid-template-columns: repeat(2, 50%);
   }

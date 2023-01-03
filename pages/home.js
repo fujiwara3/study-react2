@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
 
-      <a className={styles.title}>タイトル</a>
+      <a className={styles.title3}>タイトル</a>
 
       <main className={styles.main}>
      

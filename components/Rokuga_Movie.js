@@ -7,7 +7,7 @@ export default function Rokuga_Movie() {
   return (
     <>
       
-      <div className={styles.description}>
+      <div >
           <div>
             <a
               target="_blank"
@@ -18,8 +18,8 @@ export default function Rokuga_Movie() {
                 src="/Movie2.png"
                 alt="Vercel Logo"
                 className={styles.vercelLogo}
-                width={500}
-                height={340}
+                width={680}
+                height={465}
                 priority
               />
             </a>
