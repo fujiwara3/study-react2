@@ -44,8 +44,12 @@ export default function Home() {
       
       
       <botton  onClick= {handleClick} className={styles.main3} >
-        次の問題へ
+        {count < 10 ? 
+        <a className={styles.anchor}>次の問題へ </a>
+        : <a href="/home" className={styles.anchor}>採点</a>}
       </botton>
+
+      
       
       
       
