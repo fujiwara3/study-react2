@@ -72,7 +72,6 @@ export default function Home() {
       </a>
     
       
-      
       <botton  onClick= {handleClick} className={styles.main3} >
         {count < 10 ? 
         <p className={styles1.card}>次の問題へ</p>
