@@ -9,6 +9,7 @@ export default function Rokuga_Movie() {
       
       <div >
           <div>
+           
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -24,7 +25,7 @@ export default function Rokuga_Movie() {
               />
             </a>
           </div>
-        </div>
+       </div>
       
     </>
   )
