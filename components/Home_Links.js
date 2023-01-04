@@ -8,7 +8,7 @@ const ITEMS =[
     title: "学習",
   },
   {
-    href: "/test",
+    href: "/2_test",
     title: "テスト"
   }
 ]

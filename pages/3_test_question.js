@@ -1,10 +1,25 @@
 import styles from '../components/Main.module.css'
-import{useState, useCallback} from "react"
+import React, {useState, useCallback, useEffect} from  'react'
 import Rokuga_Botton from '../components/Rokuga_Botton'
 import Rokuga_Movie from '../components/Rokuga_Movie'
 import styles1 from '../components/Home_Links.module.css'
 
+
 export default function Home() {
+
+  const[user, setUsers] = useState([]);
+
+  useEffect(()=>{
+    fetch("https://jsonplaceholder.typicode.com/users")  
+     .then((res)=>{
+      return res.json();
+     })
+     .then((data)=>setUsers(data));
+  },[]);
+
+  
+
+  const wordList = [];
 
   const [count, setCount] = useState(1);
 
@@ -13,6 +28,10 @@ export default function Home() {
       setCount((count)=>count + 1);
     }
   }, [count]);
+
+
+  
+  
 
   return (
     <>
@@ -24,21 +43,31 @@ export default function Home() {
       <a className={styles.title1}>
         次の言葉を手話で表現してください</a>
 
-     
       <a className={styles.title2}>{count}</a>.
       
-      <a className={styles.title2}>question</a>
+
+      
+
+      {user.map((users)=>{
+
+       wordList.push(users.name);
+
+      })}
+      
+      {console.log(wordList)}
+
+      <a className={styles.title5}>{wordList[count-1]}</a>
+  
 
       <main1 className={styles.main1}>
 
       <Rokuga_Movie/>
-
+      
       <Rokuga_Botton/>
 
       </main1>
 
-      
-      <a href="/test" className={styles.main2}>
+      <a href="/2_test" className={styles.main2}>
         <p className={styles1.card}>問題選択に戻る</p>
       </a>
     
@@ -46,8 +75,8 @@ export default function Home() {
       
       <botton  onClick= {handleClick} className={styles.main3} >
         {count < 10 ? 
-        <p className={styles1.card}>"次の問題へ"</p>
-        : <a href="/home" className={styles1.card}>採点</a>}
+        <p className={styles1.card}>次の問題へ</p>
+        : <a href="/4_answer" className={styles1.card}>採点</a>}
       </botton>
 
 

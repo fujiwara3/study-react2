@@ -8,7 +8,7 @@ const ITEMS =[
     title: "Ⅰの形式",
   },
   {
-    href: "/question",
+    href: "/3_test_question",
     title: "Ⅱの形式"
   },
   {

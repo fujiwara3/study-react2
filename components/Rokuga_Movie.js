@@ -1,4 +1,4 @@
-import styles from '../components/Rokuga_Movie.module.css'
+import styles from '../components/Movie.module.css'
 import Image from 'next/image'
 
 

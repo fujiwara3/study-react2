@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       
-      <a href="/home" className={styles.anchor}>
+      <a href="/1_home" className={styles.anchor}>
         ロゴ
       </a>
 

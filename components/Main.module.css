@@ -49,10 +49,12 @@
   flex-direction: column;
   justify-content: space-between;
   font-size: 1.5rem;
+  margin-left: 1%;
 }
 
 .title2{
   font-size: 1.5rem;
+  margin-left: 1.5%;
 }
 .title3{
   display: flex;
@@ -69,6 +71,25 @@
   align-items: center;
   padding: 90px 70px 180px;
   font-size: 4rem;
+}
+.title5{
+  font-size: 1.5rem;
+  margin-left: 0.5%;
+}
+.title6{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+  padding: 20px 30px 30px 
+}
+.title7{
+  font-size: 1.8rem;
+  padding: 0px 300px 0px
+}
+.title8{
+  padding: 25px 0px 56px
 }
 
 
