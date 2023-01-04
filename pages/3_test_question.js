@@ -8,14 +8,16 @@ import styles1 from '../components/Home_Links.module.css'
 export default function Home() {
 
   const[user, setUsers] = useState([]);
-
+  
   useEffect(()=>{
-    fetch("https://jsonplaceholder.typicode.com/users")  
+    fetch("../code.json")  
      .then((res)=>{
       return res.json();
      })
      .then((data)=>setUsers(data));
   },[]);
+
+  console.log(user);
 
   
 
@@ -49,7 +51,7 @@ export default function Home() {
 
       {user.map((users)=>{
 
-       wordList.push(users.name);
+       wordList.push(users.word);
 
       })}
       

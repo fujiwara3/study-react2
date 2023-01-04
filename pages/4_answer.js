@@ -1,14 +1,25 @@
 import styles from '../components/Main.module.css'
-import React, {useState, useCallback} from  'react'
+import React, {useState, useCallback, useEffect} from  'react'
 import Answer_Movie from '../components/Answer_Movie'
 import styles1 from '../components/Home_Links.module.css'
 
 
 export default function Home() {
 
-  
-  
 
+  const[user, setUsers] = useState([]);
+
+  useEffect(()=>{
+    fetch("/code.json")  
+     .then((res)=>{
+      return res.json();
+     })
+     .then((data)=>setUsers(data));
+  },[]);
+
+  
+  const wordList = [];
+  
 
   const [count, setCount] = useState(1);
 
@@ -18,8 +29,6 @@ export default function Home() {
     }
   }, [count]);
 
-
-  
   
 
   return (
@@ -29,13 +38,28 @@ export default function Home() {
         <p>ロゴ</p>
       </a>
 
+      <br></br>
+
+      <a className={styles.title2}>{count}</a>.
+      
+
+      {user.map((users)=>{
+
+       wordList.push(users.word);
+
+      })}
+      
+
+      <a className={styles.title5}>{wordList[count-1]}</a>
+
+
       <a className={styles.title6}>
         採点</a>
 
 
       <main1 className={styles.main1}>
 
-      <Answer_Movie/>
+      <Answer_Movie string = {wordList[count-1]}/>
 
       </main1>
 
