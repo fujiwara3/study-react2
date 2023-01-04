@@ -2,7 +2,7 @@ import styles from '../components/Movie.module.css'
 import Image from 'next/image'
 
 
-export default function Answer_Movie() {
+export default function Answer_Movie(props) {
 
   return (
     <>
@@ -12,21 +12,22 @@ export default function Answer_Movie() {
              src="/Movie2.png"
              alt="Vercel Logo"
              width={660}
-             height={410}
+             height={392}
              priority
             />
             </a>
 
             
             <a className={styles.main}>
-             <Image
-             src="/Movie2.png"
+             <video
+             controls src={"/" + props.string + ".mp4"}
              alt="Vercel Logo"
              width={660}
              height={410}
              priority
             />
             </a>
+
             
         </div>
      
