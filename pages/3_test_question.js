@@ -46,7 +46,6 @@ export default function Home() {
       <a className={styles.title2}>{count}</a>.
       
 
-      
 
       {user.map((users)=>{
 
@@ -54,7 +53,6 @@ export default function Home() {
 
       })}
       
-      {console.log(wordList)}
 
       <a className={styles.title5}>{wordList[count-1]}</a>
   
